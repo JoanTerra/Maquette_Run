@@ -1,10 +1,42 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(./assets/font/Roboto.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
+  font-family: Roboto, sans-serif;
+}
+
+h1, h2, h3{
+  text-transform: uppercase;
+}
+
+p{
+  line-height: 1.5rem;
+}
+
+i {
+  font-weight: 500;
 }
 
 button {
+  padding: 1rem 2rem 1rem 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  background: none;
+  border: 2px solid rgb(5, 5, 5);
+  letter-spacing: 0.1rem;
+  border-radius: 15px;
+}
+
+button:hover {
+  background: rgba(208, 85, 85, 0.555);
+  cursor: pointer;
 }
 
 header {
@@ -62,7 +94,7 @@ header {
   background: url(./assets/img/img-right.jpg) center/cover;
 }
 
-.contact-container h2 {
+.contact-container h3 {
   text-align: center;
   margin-top: 5rem;
 }
@@ -107,5 +139,15 @@ header {
   margin-top: 5rem;
 }
 
-.network_container {
+.network_container_ul {
+  display: flex;
+  justify-content: center;
+  margin: 3rem;
+  gap: 3rem;
+}
+
+.network_container_ul li {
+  border: 1px solid rgba(207, 205, 205, 0.603);
+  border-radius: 40px;
+  padding: 1.3rem;
 }
